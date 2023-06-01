@@ -9,7 +9,7 @@
 }
 
 #topBanner{
-    background-image: url("images/home_background(1).jpg");
+    background-image: url("images/background/home_background(1).jpg");
     background-color: aquamarine;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@
 }
 
 #secBanner{
-    background: url("images/home_background(2).jpg");
+    background: url("images/background/home_background(2).jpg");
     background-position: center;
     background-size:cover;
     width: 100%;
@@ -197,7 +197,7 @@
 }
 
 #newColl{
-    background: url("images/home_background(3).jpg");
+    background: url("images/background/home_background(3).jpg");
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -234,7 +234,7 @@
 }
 
 #recRES{
-    background: url("images/home_background(4).jpg");
+    background: url("images/background/home_background(4).jpg");
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
