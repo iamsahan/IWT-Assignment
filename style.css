@@ -14,7 +14,7 @@ html {
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
-
+/* top page section */
 #topBanner{
     background-image: url("images/background/home_background(1).jpg");
     background-color: aquamarine;
@@ -182,31 +182,86 @@ html {
     color: aliceblue;
     border: 2px solid rgb(10, 10, 10);
 }
-
+/* popular collection section */
 .popCollection h2{
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     padding-top: 30px;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
 }
 
-.popCollection img{
+.l1 img, .l2 img{
     border-radius: 50%;
     border: 3px solid rgb(101, 189, 248);
     margin: 15px;
     margin-bottom: 50px;
 }
 
-.popCollection img.r1{
+.l1 img.r1, .l2 img.r1{
     height: 120px;
     width: 120px;
 }
 
-.popCollection img.r2{
+.l1 img.r2, .l2 img.r2{
     height: 90px;
     width: 90px;
+}
+.product-container {
+    overflow-x: auto;
+  }
+  
+  .l1 , .l2{
+    display: flex;
+  }
+  
+  .product-item {
+    flex: 0 0 auto;
+    margin: 8px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 100%;
+
+  }
+  
+.pre_button, .post_button {
+    width: 10vh;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-top: 24%;
+}
+
+.pre_button img, .post_button img {
+    width: 6vh;
+    height: 8vh;
+}
+
+.pre_button {
+    left: 1%;
+}
+
+.post_button img {
+    transform: rotate(180deg);
+}
+
+.post_button {
+    right: 1%;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
 }
 
 #secBanner{
@@ -220,6 +275,7 @@ html {
 
 .popCollection {
     padding-bottom: 123px;
+    position: relative;
 }
 
 #newColl h2{
@@ -297,7 +353,6 @@ html {
     display: inline-block;
     margin-left: 50%;
 }
-
 
 /* media queries */
 
