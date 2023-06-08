@@ -230,8 +230,7 @@ html {
   }
   
 .pre_button, .post_button {
-    width: 10vh;
-    height: 100%;
+   
     position:absolute;
     top: 0;
     display: flex;
