@@ -262,56 +262,127 @@
 				</div>
 			</div>
 		</section>
-		<section id="newColl">
-			<h2>Our Newest Recipes</h2>
 
-			<div class="b1">
-				<a href="a">
-					<img src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif" />
-				</a>
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-					assumenda, asperiores expedita rerum explicabo, iusto reiciendis ipsum
-					veniam repellendus ex autem numquam alias! Similique fuga, libero non
-					odio quisquam labore?
-				</p>
-			</div>
-			<div class="b1">
-				<a href="a">
-					<img src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif" />
-				</a>
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-					assumenda, asperiores expedita rerum explicabo, iusto reiciendis ipsum
-					veniam repellendus ex autem numquam alias! Similique fuga, libero non
-					odio quisquam labore?
-				</p>
-			</div>
-			<div class="b1">
-				<a href="a">
-					<img src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif" />
-				</a>
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-					assumenda, asperiores expedita rerum explicabo, iusto reiciendis ipsum
-					veniam repellendus ex autem numquam alias! Similique fuga, libero non
-					odio quisquam labore?
-				</p>
-			</div>
-			<div class="b1">
-				<a href="a">
-					<img src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif" />
-				</a>
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-					assumenda, asperiores expedita rerum explicabo, iusto reiciendis ipsum
-					veniam repellendus ex autem numquam alias! Similique fuga, libero non
-					odio quisquam labore?
-				</p>
+		<section id="newColl">
+			<div class="newCollection">
+				<h2>Our Newest Recipes</h2>
+				<button class="pre_button1"><img src="images/button/s13.png" /></button>
+				<button class="post_button1">
+					<img src="images/button/s13.png" />
+				</button>
+				<div class="itemContainer">
+					<div class="c1">
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP001'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP002'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP003'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP003'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP004'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						<div class="b1">
+							<?php
+							$con = mysqli_connect("localhost", "root", "", "recipe");
+							$result = mysqli_query($con, "SELECT * FROM Recipe WHERE RCP_ID = 'RCP005'");
+							$fetched = mysqli_fetch_assoc($result)
+						?>
+							<a href="a">
+								<img
+									src="images/cat/3809145c-642f-44c0-9f99-739249a3bf22.jfif"
+								/>
+							</a>
+							<h3>
+								<?= $fetched['RCP_name'];?>
+							</h3>
+							<p>
+							<?= $fetched['RCP_Description'];?>
+							</p>
+						</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="recRES">

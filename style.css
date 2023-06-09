@@ -284,6 +284,50 @@ html {
     padding-bottom: 30px;
 }
 
+.newCollection {
+    padding-bottom: 123px;
+    position: relative;
+}
+
+.pre_button1,
+.post_button1 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-top: 24%;
+}
+
+.pre_button1 img,
+.post_button1 img {
+  width: 6vh;
+  height: 8vh;
+}
+
+.pre_button1 {
+  left: 1%;
+}
+
+.post_button1 img {
+  transform: rotate(180deg);
+}
+
+.post_button1 {
+  right: 1%;
+}
+
+.itemContainer {
+    overflow-x: auto;
+}
+
+.c1 {
+    display: flex;
+}
+
 .b1{
     margin: 25px;
     width: 280px;
